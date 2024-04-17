@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Warps:jar">
+    <output-path>$USER_HOME$/Desktop/Curso Mine/plugins</output-path>
+    <root id="archive" name="Warps.jar">
+      <element id="module-output" name="Warps" />
+    </root>
+  </artifact>
+</component>

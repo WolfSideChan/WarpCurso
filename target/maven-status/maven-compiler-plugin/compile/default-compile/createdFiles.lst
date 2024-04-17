@@ -1,0 +1,5 @@
+pt\warps\commands\WarpCommand.class
+pt\warps\managers\WarpManager.class
+pt\warps\objets\Warp.class
+pt\warps\LocationSerielizer.class
+pt\warps\Warps.class
