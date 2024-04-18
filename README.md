@@ -7,3 +7,5 @@ Comandos:
  - /warp ir <nome>
  - /warp set <nome>
  - /warp remove <nome>
+
+A nível de mensagens quase todas elas são editáveis através da config.yml.
