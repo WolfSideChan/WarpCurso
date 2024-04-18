@@ -38,7 +38,7 @@ public class WarpCommand implements CommandExecutor {
             if (args.length == 1) {
                 if (args[0].equalsIgnoreCase("list")) {
                     if (!(p.hasPermission("warp.list"))) {
-                        p.sendMessage("§cVocê não tem permissão para executar este comando.");
+                        p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Sem_perm").replace("&", "§"));
                         return false;
                     }
                     p.sendMessage(warpManager.getWarpList());
@@ -63,7 +63,7 @@ public class WarpCommand implements CommandExecutor {
                 if (args[0].equalsIgnoreCase("remove")) {
 
                     if (!(p.hasPermission("warp.remove"))) {
-                        p.sendMessage("§cVocê não tem permissão para executar este comando.");
+                        p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Sem_perm").replace("&", "§"));
                         return false;
                     }
 
@@ -79,7 +79,7 @@ public class WarpCommand implements CommandExecutor {
                 if (args[0].equalsIgnoreCase("set")) {
 
                     if (!(p.hasPermission("warp.set"))) {
-                        p.sendMessage("§cVocê não tem permissão para executar este comando.");
+                        p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Sem_perm").replace("&", "§"));
                         return false;
                     }
 
