@@ -53,9 +53,9 @@ public class WarpCommand implements CommandExecutor {
                     Warp warp = warpManager.get(warpName);
                     if (warp != null) {
                         warpManager.go(p, warp);
-                        p.sendMessage("§aVocê teleportou-se para a warp §f" + warpName + "§a.");
+                        p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Teleportar").replace("&", "§").replace("{warp}", warpName));
                     } else {
-                        p.sendMessage("§cA warp §f"+ warpName + " §cnão existe.");
+                        p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Nao_existe").replace("&", "§").replace("{warp}", warpName));
                         return false;
                     }
 
@@ -69,7 +69,7 @@ public class WarpCommand implements CommandExecutor {
 
 
                     if (warpManager.delete(warpName)) {
-                        p.sendMessage("§cVocê deletou a warp §f" + warpName + " §ccom sucesso.");
+                        p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Remove").replace("&", "§").replace("{warp}", warpName));
                         return true;
                     }
 
@@ -84,7 +84,7 @@ public class WarpCommand implements CommandExecutor {
                     }
 
                     warpManager.insert(new Warp(warpName, p.getLocation()));
-                    p.sendMessage("§aVocê setou a warp §f" + warpName + " §acom sucesso.");
+                    p.sendMessage(INSTANCE.getConfig().getString("Mensagens.Set").replace("&", "§").replace("{warp}", warpName));
                 }
             }
 

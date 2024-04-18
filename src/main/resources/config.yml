@@ -1,3 +1,7 @@
 Warps: {}
 Mensagens:
   Sem_perm: "&cVocê não tem permissão para executar este comando."
+  Teleportar: "&aVocê teleportou-se para a warp &f{warp} §a."
+  Remove: "&cVocê deletou a warp &f{warp} &ccom sucesso."
+  Set: "&aVocê setou a warp &f{warp} &acom sucesso."
+  Nao_existe: "&cA warp &f{warp} &cnão existe."
